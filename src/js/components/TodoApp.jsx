@@ -8,7 +8,7 @@ const TodoApp = () => {
 
   
   const createUser = async () => {
-    await fetch(`https://playground.4geeks.com/todo/users/${USERNAME}`, {
+    await fetch(`https://playground.4geeks.com/todo/users/Alejandro`, {
       method: "POST",
       headers: { "Content-Type": "application/json" }
     });
@@ -21,6 +21,7 @@ const TodoApp = () => {
     setTasks(data.todos || []);
   };
 
+  
   
   const addTask = async (text) => {
     if (text.trim() === "") return;
